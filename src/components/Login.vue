@@ -4,13 +4,13 @@
     <v-flex xs12 sm5 md4 lg3>
       <v-card class="mt-0 pt-0">
           <v-card-title class="blue darken-1">
-            <h4 style="color:white">Vue-CRM</h4>
+            <h4 style="color:white">Inversiones San Miguel</h4>
           </v-card-title>
           <v-card-text>
               <form @submit.prevent="login">
                 <v-layout row wrap>
                   <v-flex xs12 md4 >
-                    <v-subheader>User ID</v-subheader>
+                    <v-subheader>Usuario</v-subheader>
                   </v-flex>
                   <v-flex  xs12 md8>
                     <v-text-field class="input-group--focused" name="email" v-model="email" label="email" value="Input text"></v-text-field>
@@ -24,7 +24,7 @@
                     <v-text-field class="input-group--focused" name="password" type="password" v-model="pass" label="password" value="Input text"></v-text-field>
                   </v-flex>
                 </v-layout>
-                <v-btn type="submit">login</v-btn>
+                <v-btn type="submit">Login</v-btn>
                 <v-snackbar v-if="error" :timeout="timeout" :top="true" :multi-line="mode === 'multi-line'" :vertical="mode === 'vertical'" v-model="error">
                   {{ text }}
                   <v-btn class="pink--text" flat @click.native="error = false">Close</v-btn>
